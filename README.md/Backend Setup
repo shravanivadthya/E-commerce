@@ -1,0 +1,15 @@
+# Step 1: Navigate to backend
+cd E-commerce/backend
+
+# Step 2: Create virtual environment
+python -m venv venv
+.\venv\Scripts\Activate.ps1   # Or use cmd: venv\Scripts\activate.bat
+
+# Step 3: Install dependencies
+pip install flask flask-cors flask-sqlalchemy requests
+
+# Step 4: Load data into DB
+python load_products.py
+
+# Step 5: Start Flask server
+python app.py
